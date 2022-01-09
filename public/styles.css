@@ -1,0 +1,40 @@
+body {
+    background-color: #181820;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+canvas {
+    vertical-align: top;
+}
+header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    height: 70px;
+    padding: 0 30px;
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.heart {
+    width: 40px;
+}
+.score {
+    color: #ffffff;
+    font-size: 24px;
+}
+footer {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    height: 26px;
+    background-color: #365431;
+    border-top: 1px solid #ffffff;
+    width: 100%;
+}
