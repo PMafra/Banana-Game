@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Game</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            height: 70px;
+            padding: 0 30px;
+            background-color: black;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .live {
+            color: #ffffff;
+        }
+        span {
+            color: #ffffff;
+            font-size: 24px;
+        }
+        .heart {
+            width: 40px;
+        }
+        footer {
+            position: fixed;
+            z-index: 1;
+            bottom: 0;
+            height: 26px;
+            background-color: #365431;
+            border-top: 1px solid #ffffff;
+            width: 100%;
+        }
+        canvas {
+            background-color: #181820;
+            width: 100%;
+            padding: 70px 0 26px 0;
+            height: 100vh;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas">
+        <div>oi</div>
+    </canvas>
+    <header>
+        <div class="lives">
+            <img class="heart" src="./images/heart.png">
+            <img class="heart" src="./images/heart.png">
+            <img class="heart" src="./images/heart.png">
+            <img class="heart" src="./images/heart-empty.png">
+        </div>
+        <div>
+            <span>Score:</span>
+            <span>154</span>
+        </div>
+    </header>
+    <footer>
+        -
+    </footer>
+
+    <script src="bundle.js"></script>
+</body>
+</html>
